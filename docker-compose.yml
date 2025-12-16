@@ -12,7 +12,6 @@ services:
         - BACKEND_API_PASSWORD=${PASSWORD}
     volumes:
       - ./credentials.yml:/home/dashboard/credentials.yml
-      - ./pages:/home/dashboard/frontend/pages
     networks:
         - emqx-bridge
   hummingbot-api:
